@@ -11,7 +11,7 @@ describe Plane do
   end
   describe '#take_off' do
     it "takes off from the designated airport" do
-      expect(@plane.land).to eq "Plane taken off sucessfully!"
+      expect(@plane.take_off).to eq "Plane taken off sucessfully!"
     end
   end
 end
