@@ -18,7 +18,7 @@ describe Plane do
       allow(@plane.air_traffic_control).to receive(:full?).and_return(true)
     end
     it "cannot land when the airport is full" do
-      expect(@plane.land).to raise_error 'Airport is full, plane cannot land!'
+      expect(@plane.land).to eq "Plane cannot land, aiport is full!"
     end
   end
   describe '#take_off' do
